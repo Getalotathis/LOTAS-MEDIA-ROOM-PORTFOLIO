@@ -1,0 +1,103 @@
+{
+  "brand": "LOTASROOM",
+  "profile_type": "visual_identity_system",
+  "version": "1.0",
+  "summary": "Serious filmmaker's workstation that accidentally became a visual universe — professional production studio x underground media company x late-night editing suite x street photography x futuristic broadcast interface. Not cyberpunk-neon-everything; real and tactile, not generic AI futurism.",
+
+  "color_system": {
+    "formula": "70% black/white cinematic imagery, 15% RGB/neon accent, 10% technical camera/broadcast graphics, 5% glitch/VHS/distortion texture",
+    "primary_palette": [
+      { "name": "true-black", "hex": "#000000", "rgb": "0,0,0", "hsl": "0,0%,0%", "role": "primary background" },
+      { "name": "near-black-elevated", "hex": "#0d0d0d", "rgb": "13,13,13", "hsl": "0,0%,5%", "role": "elevated surfaces, cards" },
+      { "name": "white", "hex": "#ffffff", "rgb": "255,255,255", "hsl": "0,0%,100%", "role": "primary typography, highlights" },
+      { "name": "chrome-silver", "hex": "#9a9a9a", "rgb": "154,154,154", "hsl": "0,0%,60%", "role": "secondary text, metallic surfaces" },
+      { "name": "gunmetal", "hex": "#3a3a3a", "rgb": "58,58,58", "hsl": "0,0%,23%", "role": "borders, dividers, low-emphasis fills" }
+    ],
+    "accent_palette": {
+      "rule": "one aggressive RGB accent dominates at a time; color should feel like it is breaking through the monochrome, never filling the design",
+      "options": [
+        { "name": "electric-cyan", "hex": "#00f0ff", "use": "primary accent — links, tags, glow, focus states" },
+        { "name": "electric-magenta", "hex": "#ff2ec4", "use": "alternate accent for variation / secondary campaigns" },
+        { "name": "signal-red", "hex": "#ff2b2b", "use": "REC indicators, alerts, live/recording states" },
+        { "name": "deep-violet", "hex": "#7a2bff", "use": "rare accent for depth/shadow tinting" }
+      ]
+    },
+    "color_temperature": "cool-dominant with intentional warm/electric interruptions",
+    "saturation_levels": {
+      "base_imagery": "low to desaturated (near black & white)",
+      "accent_elements": "high / electric saturation",
+      "rule": "never blend the two — accent stays crisp and isolated against desaturated ground"
+    },
+    "contrast_ratio": "high — near-black ground against pure white type, minimum AA compliance, accent color reserved for elements that must pop instantly",
+    "application_patterns": [
+      "accent color appears on max 1–3 elements per screen",
+      "accent used for interactive/technical elements (tags, timecodes, playheads, focus rings) not large fills",
+      "photography stays desaturated or true black & white; color is layered on top via UI, not baked into the image"
+    ]
+  },
+
+  "typography": {
+    "primary_display": { "style": "bold condensed sans-serif", "example_family": "Unbounded / Archivo Black / similar geometric-industrial display", "weight_range": "700–900", "usage": "hero titles, oversized headlines, section numerals" },
+    "secondary_body": { "style": "clean modern sans-serif", "example_family": "Manrope / Inter", "weight_range": "400–600", "usage": "body copy, descriptions" },
+    "technical_label": { "style": "monospace", "example_family": "JetBrains Mono", "weight_range": "400–500", "usage": "timecodes, coordinates, recording info, technical captions, tags" },
+    "case_and_spacing": {
+      "titles": "large, uppercase, tight letter-spacing (negative tracking)",
+      "labels": "uppercase, wide letter-spacing (+0.1em to +0.18em), small size"
+    },
+    "text_color_pattern": "white text on black by default; accent color reserved for links, tags, and technical labels",
+    "effects": ["occasional oversized type partially cropped off-frame", "rare chromatic-aberration duplicate text (red/cyan offset) for glitch emphasis — sparing use only"],
+    "readability_note": "high contrast keeps grain/scanline texture from compromising legibility; never place body text directly over unfiltered imagery without a scrim"
+  },
+
+  "composition_and_layout": {
+    "element_placement": "asymmetric, editorial; content anchored to frame edges like a viewfinder rather than centered by default",
+    "rule_of_thirds": "used for photographic subject placement; UI elements (labels, timecodes) sit at frame corners echoing camera HUD conventions",
+    "symmetry": "primarily asymmetric with occasional symmetric moments for emphasis (e.g. centered hero title within an otherwise off-center frame)",
+    "white_space": "generous negative space around subjects; avoid crowding — space itself signals confidence",
+    "focal_point_strategy": "one clear subject per frame; everything else recedes into black or desaturated ground",
+    "layering": "base image/black ground → grain/noise → scanline or texture pass → technical UI overlay (corner labels, crosshairs, timecode) → sparing accent glow"
+  },
+
+  "visual_elements": {
+    "icon_style": "outlined, thin-stroke, technical/UI-referential (not filled, not skeuomorphic)",
+    "image_treatment": {
+      "filters": "desaturated to true black & white as default; grain and noise added, never sterile/clean",
+      "overlays": ["subtle scanlines", "occasional chromatic aberration", "vignette toward frame edges"],
+      "borders": "thin white hairline frames or black letterbox bars on cinematic (16:9) crops"
+    },
+    "background_patterns": ["flat true black", "very low-opacity film grain", "occasional scanline texture"],
+    "texture_usage": "grain and noise are load-bearing — they are what keeps the brand feeling tactile/real rather than synthetic",
+    "graphic_elements": ["thin white lines", "rectangles / framing boxes", "crosshairs", "camera-recorder UI references (REC dot, timecode)", "VHS/CRT artifacts used sparingly"],
+    "branding_placement": "monogram/wordmark stays small and technical (like a camera watermark), never oversized or centered as a logo lockup"
+  },
+
+  "contrast_and_depth": {
+    "contrast_level": "high",
+    "shadow_usage": { "depth": "deep, hard-edged shadows rather than soft ambient shadows", "direction": "single dominant light source implied, directional not diffuse", "intensity": "strong — shadows should read as absence of light, not a soft dropshadow effect" },
+    "highlight_technique": "hard highlights, occasional blown-out/overexposed accents for a gritty digital-camera feel; rim/edge lighting on subjects",
+    "dimensionality": "mostly flat UI with photographic depth doing the dimensional work; avoid glossy 3D UI chrome",
+    "depth_layering": "black ground establishes infinite depth; grain sits just above it; UI elements float on top at a consistent flat plane"
+  },
+
+  "style_characteristics": {
+    "aesthetic": "cinematic-technical, underground-professional, broadcast-adjacent",
+    "emotional_tone": ["focused", "nocturnal", "confident", "slightly clandestine", "precise"],
+    "industry_alignment": "independent music/media production, videography, photography, live production",
+    "target_audience": "independent musicians, content creators, small brands who want their media to feel shot by a real operator, not a template",
+    "explicit_exclusions": ["generic cyberpunk neon-everything", "glossy corporate tech gradients", "cream/pastel palettes", "rounded friendly SaaS UI"]
+  },
+
+  "technical_specifications": {
+    "aspect_ratios": ["16:9 (primary, cinematic)", "4:5 or 1:1 for social crops"],
+    "resolution": { "web_hero_min": "1920x1080", "social_min": "1080x1080" },
+    "file_formats": { "photography": ["JPG", "WebP"], "graphics_with_transparency": ["PNG", "SVG"], "video": ["MP4 (H.264/H.265)"] },
+    "export_notes": "preserve grain — do not run through denoising or heavy JPEG compression that flattens texture; keep blacks true black, not crushed-gray"
+  },
+
+  "example_use_cases": [
+    "Portfolio site hero: full-bleed desaturated night photo, white uppercase condensed title, single cyan accent on the CTA button, mono timecode label in a corner",
+    "Instagram post: black & white production still, thin white border frame, small monospace caption with fake coordinates/timecode, one cyan or magenta accent element",
+    "Video lower-third: monospace label on a black bar, thin white rule line, no gradient fill",
+    "Merch/promo graphic: bold condensed uppercase wordmark cropped at the frame edge, grain texture over black, single accent color used only on one word or icon"
+  ]
+}

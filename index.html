@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lotasroom — Videography, Photography & Design</title>
+<meta name="description" content="Lotasroom LLC — independent videography, photography, graphic design and 3D work. Shot after dark in New York City.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="frame-border" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-mark" aria-label="Lotasroom home">
+    <span class="mark-ring">LR</span>
+    <span class="mark-word">LOTASROOM</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="nav-status">
+    <span class="rec-dot" aria-hidden="true"></span>
+    <span class="timecode" id="timecode">00:00:00:00</span>
+  </div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="frame-corner tl"><span>● REC</span></div>
+  <div class="frame-corner tr"><span>A7IV · 35MM · ISO 3200</span></div>
+  <div class="frame-corner bl"><span>NO ARTIFICIAL LIGHT</span></div>
+  <div class="frame-corner br"><span>NYC / EST</span></div>
+
+  <div class="hero-inner">
+    <p class="eyebrow">Independent creative media production</p>
+    <h1 class="hero-title">LOTASROOM</h1>
+    <p class="hero-sub">Videography, photography &amp; design — shot after dark<br class="br-desktop"> in New York City, run out of West Haven, CT.</p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">View the work</a>
+      <a href="#contact" class="btn btn-ghost">Start a project</a>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>VIDEOGRAPHY</span><span>PHOTOGRAPHY</span><span>GRAPHIC DESIGN</span><span>3D / BLENDER</span><span>MUSIC VIDEOS</span>
+    <span>VIDEOGRAPHY</span><span>PHOTOGRAPHY</span><span>GRAPHIC DESIGN</span><span>3D / BLENDER</span><span>MUSIC VIDEOS</span>
+  </div>
+</div>
+
+<!-- ============ WORK ============ -->
+<section class="work" id="work">
+  <div class="section-head">
+    <p class="kicker"><span class="kicker-line"></span>Selected work</p>
+    <h2>Frame by frame.</h2>
+    <p class="section-note">
+      Replace every card below with your own project — swap the thumbnail in <code>css/style.css</code>
+      or drop an image/GIF into the card's <code>.thumb</code> div. Full instructions are in the README.
+    </p>
+  </div>
+
+  <div class="work-grid">
+
+    <article class="work-card size-lg" data-cat="video">
+      <span class="shot-no">SHOT 01</span>
+      <div class="thumb thumb-1">
+        <span class="play-icon" aria-hidden="true">▶</span>
+        <div class="scrubber"><span class="scrubber-fill"></span><span class="scrubber-head"></span></div>
+      </div>
+      <div class="card-corner tl"></div>
+      <div class="card-corner br"></div>
+      <div class="card-meta">
+        <span class="tag">VIDEO</span>
+        <h3>Add your music video title</h3>
+        <p>Client / Location — Year</p>
+      </div>
+    </article>
+
+    <article class="work-card size-sm" data-cat="photo">
+      <span class="shot-no">SHOT 02</span>
+      <div class="thumb thumb-2"></div>
+      <div class="card-corner tl"></div>
+      <div class="card-corner br"></div>
+      <div class="card-meta">
+        <span class="tag">PHOTO</span>
+        <h3>Add a photo series title</h3>
+        <p>Client / Location — Year</p>
+      </div>
+    </article>
+
+    <article class="work-card size-sm" data-cat="design">
+      <span class="shot-no">SHOT 03</span>
+      <div class="thumb thumb-3"></div>
+      <div class="card-corner tl"></div>
+      <div class="card-corner br"></div>
+      <div class="card-meta">
+        <span class="tag">DESIGN</span>
+        <h3>Add a brand / design project</h3>
+        <p>Client — Year</p>
+      </div>
+    </article>
+
+    <article class="work-card size-md" data-cat="video">
+      <span class="shot-no">SHOT 04</span>
+      <div class="thumb thumb-4">
+        <span class="play-icon" aria-hidden="true">▶</span>
+        <div class="scrubber"><span class="scrubber-fill"></span><span class="scrubber-head"></span></div>
+      </div>
+      <div class="card-corner tl"></div>
+      <div class="card-corner br"></div>
+      <div class="card-meta">
+        <span class="tag">VIDEO</span>
+        <h3>Add a live show / session edit</h3>
+        <p>Client / Venue — Year</p>
+      </div>
+    </article>
+
+    <article class="work-card size-md" data-cat="3d">
+      <span class="shot-no">SHOT 05</span>
+      <div class="thumb thumb-5"></div>
+      <div class="card-corner tl"></div>
+      <div class="card-corner br"></div>
+      <div class="card-meta">
+        <span class="tag">3D / BLENDER</span>
+        <h3>Add a 3D or composite piece</h3>
+        <p>Personal / Client — Year</p>
+      </div>
+    </article>
+
+    <article class="work-card size-sm" data-cat="photo">
+      <span class="shot-no">SHOT 06</span>
+      <div class="thumb thumb-6"></div>
+      <div class="card-corner tl"></div>
+      <div class="card-corner br"></div>
+      <div class="card-meta">
+        <span class="tag">PHOTO</span>
+        <h3>Add a portrait / event set</h3>
+        <p>Client / Location — Year</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head">
+    <p class="kicker"><span class="kicker-line"></span>What I do</p>
+    <h2>Full pipeline, one operator.</h2>
+  </div>
+
+  <div class="services-grid">
+    <div class="service">
+      <span class="service-index">01</span>
+      <h3>Videography</h3>
+      <p>Music videos, live sets and content shot handheld and solo — built for low light and real locations, no crew required.</p>
+    </div>
+    <div class="service">
+      <span class="service-index">02</span>
+      <h3>Photography</h3>
+      <p>Live coverage, portraits and promo stills for artists and small businesses that need images fast and consistent.</p>
+    </div>
+    <div class="service">
+      <span class="service-index">03</span>
+      <h3>Graphic design</h3>
+      <p>Cover art, promo assets and brand collateral, designed to hold up across social, print and press kits.</p>
+    </div>
+    <div class="service">
+      <span class="service-index">04</span>
+      <h3>3D &amp; compositing</h3>
+      <p>Blender-built elements and AI-assisted composites — portals, neon, motion graphics — cut into real footage in post.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="about-text">
+    <p class="kicker"><span class="kicker-line"></span>About</p>
+    <h2>Lotasroom LLC</h2>
+    <p>
+      Lotasroom is an independent creative media production company — videography, photography, graphic design
+      and 3D work for musicians, content creators and small businesses. Based in West Haven, CT, with an
+      active presence shooting nights across New York City.
+    </p>
+    <p>
+      Every project runs through one operator, start to finish — concept, shoot and post — so the look stays
+      consistent from the first frame to the final export.
+    </p>
+    <p class="collab-line">Ongoing production work for <span>Outside The Ghetto (OTG)</span> and independent artists.</p>
+  </div>
+  <div class="about-facts">
+    <div class="fact">
+      <span class="fact-label">BASED</span>
+      <span class="fact-value">West Haven, CT / NYC</span>
+    </div>
+    <div class="fact">
+      <span class="fact-label">FOCUS</span>
+      <span class="fact-value">Musicians, creators &amp; small business</span>
+    </div>
+    <div class="fact">
+      <span class="fact-label">APPROACH</span>
+      <span class="fact-value">Solo shooter, full pipeline</span>
+    </div>
+    <div class="fact">
+      <span class="fact-label">POST</span>
+      <span class="fact-value">DaVinci Resolve / Fusion</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <p class="kicker kicker-center"><span class="kicker-line"></span>Get in touch<span class="kicker-line"></span></p>
+  <h2>Have a project in mind?</h2>
+  <a class="contact-email" href="mailto:lotasroom@gmail.com">lotasroom@gmail.com</a>
+  <a class="contact-phone" href="tel:+12034150768">203-415-0768</a>
+  <p class="contact-note">Currently available for bookings.</p>
+</section>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Lotasroom LLC</span>
+  <a href="https://instagram.com/GETALOTATHIS" class="footer-ig">@GETALOTATHIS</a>
+  <span>Built without a template.</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
