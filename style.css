@@ -151,13 +151,14 @@ img{ max-width:100%; display:block; }
 .frame-corner.br{ bottom:3.5rem; right:var(--edge); text-align:right; }
 .frame-corner.tl span{ color:var(--accent-alt); }
 
-.hero-inner{ max-width:840px; }
+.hero-inner{ max-width:840px; margin:0 auto; }
 .hero-title{
   font-size:clamp(3.2rem, 11vw, 8rem);
   font-weight:900;
   letter-spacing:-0.02em;
   line-height:0.95;
   margin-bottom:1.4rem;
+  margin-right:-0.02em;
   position:relative;
   animation:glitch-in 0.7s steps(6) 1;
 }
