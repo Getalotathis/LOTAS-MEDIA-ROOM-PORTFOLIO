@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/31199227/README.md)
 # Lotasroom Portfolio Site
 
 A free, static portfolio site — no domain purchase needed. Hosted on GitHub Pages
@@ -48,6 +49,20 @@ one `<article class="work-card ...">`. To swap in real work:
 
 To add real images: create an `images/` folder next to `index.html`, upload your
 photos there, and reference them as `images/filename.jpg`.
+
+## Turn on the contact form
+
+The contact form in the Contact section needs a free Formspree account to actually
+deliver submissions to your inbox:
+
+1. Go to [formspree.io](https://formspree.io) and sign up free
+2. Create a new form, connect it to `lotasroom@gmail.com`
+3. Formspree gives you an endpoint like `https://formspree.io/f/abcd1234`
+4. In `index.html`, find the line `<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID"`
+   and swap `YOUR_FORM_ID` for the ID Formspree gave you
+5. Commit — submissions will now land in your email automatically
+
+Free tier covers 50 submissions/month, which is plenty to start.
 
 ## Custom domain later (optional)
 
