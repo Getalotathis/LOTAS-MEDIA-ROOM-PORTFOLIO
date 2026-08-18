@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lotasroom — Videography, Photography & Design</title>
-<meta name="description" content="Lotasroom LLC — independent videography, photography, graphic design and 3D work. Shot after dark in New York City.">
+<meta name="description" content="Lotasroom LLC — independent videography, photography, graphic design and 3D work. New England-based, shooting in New York City.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
@@ -18,16 +19,18 @@
 <div class="grain" aria-hidden="true"></div>
 <div class="scanlines" aria-hidden="true"></div>
 <div class="frame-border" aria-hidden="true"></div>
+<div class="reel-rail" aria-hidden="true"><div class="reel-fill" id="reelFill"></div></div>
 
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a href="#top" class="nav-mark" aria-label="Lotasroom home">
-    <span class="mark-ring">LR</span>
+    <img src="assets/logo.png" alt="Lotasroom logo" class="mark-ring">
     <span class="mark-word">LOTASROOM</span>
   </a>
 
   <nav class="nav-links" id="navLinks">
     <a href="#work">Work</a>
+    <a href="#archive">Archive</a>
     <a href="#services">Services</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
@@ -35,6 +38,7 @@
 
   <div class="nav-status">
     <span class="rec-dot" aria-hidden="true"></span>
+    <span class="rec-label">REC</span>
     <span class="timecode" id="timecode">00:00:00:00</span>
   </div>
 
@@ -45,15 +49,18 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="frame-corner tl"><span>● REC</span></div>
+  <div class="frame-corner tl"><span>SC. 01 · TK. 04</span></div>
   <div class="frame-corner tr"><span>A7IV · 35MM · ISO 3200</span></div>
-  <div class="frame-corner bl"><span>NO ARTIFICIAL LIGHT</span></div>
-  <div class="frame-corner br"><span>NYC / EST</span></div>
+  <div class="frame-corner bl"><span id="frameCounter">FRAME 000000</span></div>
+  <div class="frame-corner br"><span>NEW ENGLAND / NYC</span></div>
+
+  <div class="letterbox letterbox-top" aria-hidden="true"></div>
+  <div class="letterbox letterbox-bottom" aria-hidden="true"></div>
 
   <div class="hero-inner">
     <p class="eyebrow">Independent creative media production</p>
     <h1 class="hero-title">LOTASROOM</h1>
-    <p class="hero-sub">Videography, Photography &amp; Design — shot after dark<br class="br-desktop"> in New York City, run out of West Haven, CT.</p>
+    <p class="hero-sub">Videography, Photography &amp; Design — New England-based,<br class="br-desktop"> shooting nights in New York City.</p>
     <div class="hero-actions">
       <a href="#work" class="btn btn-primary">View the work</a>
       <a href="#contact" class="btn btn-ghost">Start a project</a>
@@ -168,6 +175,78 @@
   </div>
 </section>
 
+<!-- ============ ARCHIVE ============ -->
+<section class="archive" id="archive">
+  <div class="section-head">
+    <p class="kicker"><span class="kicker-line"></span>Archive</p>
+    <h2>Every year, every frame.</h2>
+    <p class="section-note">
+      Browse the full reel by year and category. Duplicate an <code>.archive-card</code> and set its
+      <code>data-year</code> / <code>data-cat</code> to add new work — the tabs below update automatically.
+    </p>
+  </div>
+
+  <div class="archive-controls">
+    <div class="year-tabs" role="tablist" aria-label="Filter by year">
+      <button class="year-tab active" data-year="2026" type="button">'26</button>
+      <button class="year-tab" data-year="2025" type="button">'25</button>
+      <button class="year-tab" data-year="2024" type="button">'24</button>
+    </div>
+    <div class="cat-filters" role="tablist" aria-label="Filter by category">
+      <button class="cat-chip active" data-cat="all" type="button">All</button>
+      <button class="cat-chip" data-cat="commission" type="button">Commissioned Work</button>
+      <button class="cat-chip" data-cat="photo" type="button">Photography</button>
+      <button class="cat-chip" data-cat="design" type="button">Design</button>
+      <button class="cat-chip" data-cat="vfx" type="button">VFX / 3D</button>
+    </div>
+  </div>
+
+  <div class="archive-grid" id="archiveGrid">
+
+    <article class="archive-card" data-year="2026" data-cat="commission">
+      <div class="thumb thumb-1"><span class="play-icon" aria-hidden="true">▶</span></div>
+      <div class="card-meta"><span class="tag">COMMISSIONED</span><h3>Add a 2026 music video</h3><p>Client — 2026</p></div>
+    </article>
+    <article class="archive-card" data-year="2026" data-cat="photo">
+      <div class="thumb thumb-2"></div>
+      <div class="card-meta"><span class="tag">PHOTOGRAPHY</span><h3>Add a 2026 photo set</h3><p>Client — 2026</p></div>
+    </article>
+    <article class="archive-card" data-year="2026" data-cat="vfx">
+      <div class="thumb thumb-5"></div>
+      <div class="card-meta"><span class="tag">VFX / 3D</span><h3>Add a 2026 composite</h3><p>Personal — 2026</p></div>
+    </article>
+
+    <article class="archive-card" data-year="2025" data-cat="commission">
+      <div class="thumb thumb-4"><span class="play-icon" aria-hidden="true">▶</span></div>
+      <div class="card-meta"><span class="tag">COMMISSIONED</span><h3>Add a 2025 short film</h3><p>Client — 2025</p></div>
+    </article>
+    <article class="archive-card" data-year="2025" data-cat="design">
+      <div class="thumb thumb-3"></div>
+      <div class="card-meta"><span class="tag">DESIGN</span><h3>Add a 2025 design project</h3><p>Client — 2025</p></div>
+    </article>
+    <article class="archive-card" data-year="2025" data-cat="photo">
+      <div class="thumb thumb-6"></div>
+      <div class="card-meta"><span class="tag">PHOTOGRAPHY</span><h3>Add a 2025 event set</h3><p>Client — 2025</p></div>
+    </article>
+
+    <article class="archive-card" data-year="2024" data-cat="commission">
+      <div class="thumb thumb-1"><span class="play-icon" aria-hidden="true">▶</span></div>
+      <div class="card-meta"><span class="tag">COMMISSIONED</span><h3>Add a 2024 music video</h3><p>Client — 2024</p></div>
+    </article>
+    <article class="archive-card" data-year="2024" data-cat="vfx">
+      <div class="thumb thumb-5"></div>
+      <div class="card-meta"><span class="tag">VFX / 3D</span><h3>Add a 2024 composite</h3><p>Personal — 2024</p></div>
+    </article>
+    <article class="archive-card" data-year="2024" data-cat="design">
+      <div class="thumb thumb-3"></div>
+      <div class="card-meta"><span class="tag">DESIGN</span><h3>Add a 2024 design project</h3><p>Client — 2024</p></div>
+    </article>
+
+  </div>
+
+  <p class="archive-empty" id="archiveEmpty" hidden>Nothing filed under this year/category combination yet.</p>
+</section>
+
 <!-- ============ SERVICES ============ -->
 <section class="services" id="services">
   <div class="section-head">
@@ -207,7 +286,7 @@
     <p>
       Lotasroom is an independent creative media production company — videography, photography, graphic design
       and 3D work for musicians, content creators and small businesses. Based in West Haven, CT, with an
-      active presence shooting nights across New York City.
+      active presence filming nights across New York City.
     </p>
     <p>
       Every project runs through one operator, start to finish — concept, shoot and post — so the look stays
@@ -218,7 +297,7 @@
   <div class="about-facts">
     <div class="fact">
       <span class="fact-label">BASED</span>
-      <span class="fact-value">West Haven, CT / NYC</span>
+      <span class="fact-value">New England / NYC</span>
     </div>
     <div class="fact">
       <span class="fact-label">FOCUS</span>
@@ -239,8 +318,46 @@
 <section class="contact" id="contact">
   <p class="kicker kicker-center"><span class="kicker-line"></span>Get in touch<span class="kicker-line"></span></p>
   <h2>Have a project in mind?</h2>
-  <a class="contact-email" href="mailto:lotasroom@gmail.com">lotasroom@gmail.com</a>
-  <a class="contact-phone" href="tel:+12034150768">203-415-0768</a>
+
+  <!--
+    FORM SETUP: this form posts to Formspree, a free form-backend service.
+    1. Go to formspree.io and create a free account
+    2. Create a new form — it'll give you an endpoint like https://formspree.io/f/abcd1234
+    3. Replace YOUR_FORM_ID below with that ID
+    Submissions land in your email (lotasroom@gmail.com) automatically.
+  -->
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="form-row">
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" required>
+      </label>
+    </div>
+    <label>
+      <span>Project type</span>
+      <select name="project_type">
+        <option>Videography</option>
+        <option>Photography</option>
+        <option>Graphic Design</option>
+        <option>3D / VFX</option>
+        <option>Other</option>
+      </select>
+    </label>
+    <label>
+      <span>Tell me about the project</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit" class="btn btn-primary form-submit">Send inquiry</button>
+  </form>
+
+  <div class="contact-direct">
+    <a class="contact-email" href="mailto:lotasroom@gmail.com">lotasroom@gmail.com</a>
+    <a class="contact-phone" href="tel:+12034150768">203-415-0768</a>
+  </div>
   <p class="contact-note">Currently available for bookings.</p>
 </section>
 
